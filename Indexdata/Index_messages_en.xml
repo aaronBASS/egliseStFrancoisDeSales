@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<krpano>
+
+<!-- ************************ -->
+<!--         Messages         -->
+<!-- ************************ -->
+
+  <data name="en_project_title"><![CDATA[Église Saint-François-de-Sales | Photos Denis Baribault | Montage Aaron Bass]]></data>
+  <data name="en_project_author_name"><![CDATA[Denis Baribault et Aaron Bass]]></data>
+  <data name="en_project_author_url"><![CDATA[http://PortneufVirtuel]]></data>
+
+
+
+  <data name="en_pano75_title"><![CDATA[Chair]]></data>
+  <data name="en_spotpoint173websiteViewer|websiteViewer|displaywebsitewebsite_url"><![CDATA[https://sketchfab.com/models/232ff0e132854bf1ae1ab3d62c436a20/embed]]></data>
+  <data name="en_spotpoint173websiteViewer|websiteViewer|displaywebsitewebsite_title"><![CDATA[]]></data>
+  <data name="en_spotpoint174websiteViewer|websiteViewer|displaywebsitewebsite_url"><![CDATA[https://sketchfab.com/models/488e3f23d9924187ac18996388f96e82/embed]]></data>
+  <data name="en_spotpoint174websiteViewer|websiteViewer|displaywebsitewebsite_title"><![CDATA[]]></data>
+  <data name="en_spotpoint180websiteViewer1|websiteViewer|displaywebsitewebsite_url"><![CDATA[http://www.histoireneuville.com/f6baldaquin.html]]></data>
+  <data name="en_spotpoint180websiteViewer1|websiteViewer|displaywebsitewebsite_title"><![CDATA[]]></data>
+
+
+  <data name="en_pano17_title"><![CDATA[Nef01 - avant]]></data>
+  <data name="en_spotpoint270websiteViewer1|websiteViewer|displaywebsitewebsite_url"><![CDATA[http://www.histoireneuville.com/f6baldaquin.html]]></data>
+  <data name="en_spotpoint270websiteViewer1|websiteViewer|displaywebsitewebsite_title"><![CDATA[]]></data>
+  <data name="en_spotpoint272websiteViewer|websiteViewer|displaywebsitewebsite_url"><![CDATA[https://sketchfab.com/models/488e3f23d9924187ac18996388f96e82/embed]]></data>
+  <data name="en_spotpoint272websiteViewer|websiteViewer|displaywebsitewebsite_title"><![CDATA[]]></data>
+  <data name="en_spotpoint275websiteViewer1|websiteViewer|displaywebsitewebsite_url"><![CDATA[http://www.histoireneuville.com/f8antoineplamondon.html]]></data>
+  <data name="en_spotpoint275websiteViewer1|websiteViewer|displaywebsitewebsite_title"><![CDATA[]]></data>
+
+
+  <data name="en_pano18_title"><![CDATA[Nef02 - centre]]></data>
+  <data name="en_spotpoint61websiteViewer|websiteViewer|displaywebsitewebsite_url"><![CDATA[https://sketchfab.com/models/232ff0e132854bf1ae1ab3d62c436a20/embed]]></data>
+  <data name="en_spotpoint61websiteViewer|websiteViewer|displaywebsitewebsite_title"><![CDATA[]]></data>
+  <data name="en_spotpoint276websiteViewer1|websiteViewer|displaywebsitewebsite_url"><![CDATA[http://www.histoireneuville.com/f8antoineplamondon.html]]></data>
+  <data name="en_spotpoint276websiteViewer1|websiteViewer|displaywebsitewebsite_title"><![CDATA[]]></data>
+
+
+  <data name="en_pano19_title"><![CDATA[Nef03 - arriere]]></data>
+
+
+  <data name="en_pano16_title"><![CDATA[Mezzanine]]></data>
+  <data name="en_spotpoint269websiteViewer1|websiteViewer|displaywebsitewebsite_url"><![CDATA[http://www.histoireneuville.com/f6baldaquin.html]]></data>
+  <data name="en_spotpoint269websiteViewer1|websiteViewer|displaywebsitewebsite_title"><![CDATA[]]></data>
+  <data name="en_spotpoint273websiteViewer1|websiteViewer|displaywebsitewebsite_url"><![CDATA[http://www.histoireneuville.com/f7lorgue.html]]></data>
+  <data name="en_spotpoint273websiteViewer1|websiteViewer|displaywebsitewebsite_title"><![CDATA[]]></data>
+  <data name="en_spotpoint467websiteViewer1|websiteViewer|displaywebsitewebsite_url"><![CDATA[http://www.histoireneuville.com/f8antoineplamondon.html]]></data>
+  <data name="en_spotpoint467websiteViewer1|websiteViewer|displaywebsitewebsite_title"><![CDATA[]]></data>
+
+
+  <data name="en_pano76_title"><![CDATA[Coeur 01 - centre]]></data>
+  <data name="en_spotpoint274websiteViewer1|websiteViewer|displaywebsitewebsite_url"><![CDATA[http://www.histoireneuville.com/f8antoineplamondon.html]]></data>
+  <data name="en_spotpoint274websiteViewer1|websiteViewer|displaywebsitewebsite_title"><![CDATA[]]></data>
+  <data name="en_spotpoint561_tooltip"><![CDATA[Chair]]></data>
+
+
+  <data name="en_pano77_title"><![CDATA[Coeur02 - Arriere]]></data>
+  <data name="en_spotvideo147_tooltip"><![CDATA[Extrait d'un documentaire par Aubert Tremblay]]></data>
+  <data name="en_spotpoint157_tooltip"><![CDATA[Plein Écran]]></data>
+
+
+  <data name="en_pano78_title"><![CDATA[Sacristie]]></data>
+  <data name="en_spotpoint277websiteViewer1|websiteViewer|displaywebsitewebsite_url"><![CDATA[http://www.histoireneuville.com/f8antoineplamondon.html]]></data>
+  <data name="en_spotpoint277websiteViewer1|websiteViewer|displaywebsitewebsite_title"><![CDATA[]]></data>
+
+
+  <data name="en_pano79_title"><![CDATA[Trancept-01]]></data>
+  <data name="en_spotpoint167websiteViewer|websiteViewer|displaywebsitewebsite_url"><![CDATA[https://sketchfab.com/models/232ff0e132854bf1ae1ab3d62c436a20/embed]]></data>
+  <data name="en_spotpoint167websiteViewer|websiteViewer|displaywebsitewebsite_title"><![CDATA[]]></data>
+  <data name="en_spotpoint168websiteViewer|websiteViewer|displaywebsitewebsite_url"><![CDATA[https://sketchfab.com/models/488e3f23d9924187ac18996388f96e82/embed]]></data>
+  <data name="en_spotpoint168websiteViewer|websiteViewer|displaywebsitewebsite_title"><![CDATA[]]></data>
+
+
+
+
+
+
+  <data name="en_contextmenuopenFsLabel"><![CDATA[Enter Fullscreen]]></data>
+  <data name="en_contextmenucloseFsLabel"><![CDATA[Exit Fullscreen]]></data>
+  <data name="en_contextmenunormallabel"><![CDATA[Normal View]]></data>
+  <data name="en_contextmenufisheyelabel"><![CDATA[Fisheye View]]></data>
+  <data name="en_contextmenuarchitecturallabel"><![CDATA[Architectural View]]></data>
+  <data name="en_contextmenulittleplanetlabel"><![CDATA[Little Planet View]]></data>
+  <data name="en_websiteViewerfullscreen_text"><![CDATA[Fullscreen mode]]></data>
+  <data name="en_websiteViewerclose_text"><![CDATA[Close]]></data>
+  <data name="en_websiteViewer1fullscreen_text"><![CDATA[Fullscreen mode]]></data>
+  <data name="en_websiteViewer1close_text"><![CDATA[Close]]></data>
+
+
+  <data name="en_vr_setup_hmd0"><![CDATA[SELECT YOUR HMD]]></data>
+  <data name="en_vr_setup_advanced"><![CDATA[ADVANCED SETTINGS]]></data>
+  <data name="en_vr_setup_title"><![CDATA[WEB VR SETTINGS]]></data>
+  <data name="en_vr_setup_dvn1"><![CDATA[Device:]]></data>
+  <data name="en_vr_setup_siz1"><![CDATA[Screen size:]]></data>
+  <data name="en_vr_setup_ipd1"><![CDATA[IPD:]]></data>
+  <data name="en_vr_setup_hmd1"><![CDATA[HMD:]]></data>
+  <data name="en_vr_setup_hmd3"><![CDATA[Customize]]></data>
+  <data name="en_vr_setup_cal"><![CDATA[Calibrate gyroscope]]></data>
+  <data name="en_vr_setup_sav"><![CDATA[SAVE]]></data>
+  <data name="en_vr_setup_rst"><![CDATA[RESET]]></data>
+  <data name="en_vr_setup_simple"><![CDATA[SIMPLE]]></data>
+  <data name="en_vr_setup_cls"><![CDATA[CLOSE]]></data>
+  <data name="en_vr_setup_m31"><![CDATA[HMD SETTINGS]]></data>
+  <data name="en_vr_setup_fov1"><![CDATA[FOV:]]></data>
+  <data name="en_vr_setup_dst1"><![CDATA[Distortion:]]></data>
+  <data name="en_vr_setup_d2tx"><![CDATA[Distortion 2:]]></data>
+  <data name="en_vr_setup_vig1"><![CDATA[Vignette:]]></data>
+  <data name="en_vr_setup_cac1"><![CDATA[Chromatic aberration:]]></data>
+  <data name="en_vr_setup_olp1"><![CDATA[Overlap:]]></data>
+  <data name="en_vr_setup_m35"><![CDATA[RETURN]]></data>
+  <data name="en_vr_setup_cb1"><![CDATA[GYROSCOPE]]></data>
+  <data name="en_vr_setup_cb2"><![CDATA[Place the device on a flat and[br]stable surface and tab CALIBRATE[br]to correct a gyroscope drifting.]]></data>
+  <data name="en_vr_setup_cb3"><![CDATA[CALIBRATE]]></data>
+  <data name="en_vr_setup_cb4"><![CDATA[RESET]]></data>
+  <data name="en_vr_setup_cb5"><![CDATA[RETURN]]></data>
+  <data name="en_vr_setup_cb6"><![CDATA[Calibrating...]]></data>
+  <data name="en_vr_setup_cb7"><![CDATA[Successful calibration]]></data>
+  <data name="en_vr_setup_cb8"><![CDATA[Calibration failed]]></data>
+  <data name="en_vr_setup_unavailable"><![CDATA[VR mode[br]is unavailable on your device]]></data>
+
+
+  <data name="en_project_description"><![CDATA[<font face="georgia, serif">Église Saint-François-de-Sales | Ville de Neuvillelle de Neuville&nbsp;</font>]]></data>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <data name="en_spotvideo147_description"><![CDATA[<span style="color: rgb(255, 255, 255); font-family: 'trebuchet ms', sans-serif; background-color: rgb(0, 0, 0);">Extrait d'un documentaire par Aubert Tremblay</span>]]></data>
+  <data name="en_spotpoint157_description"><![CDATA[<font size="4" face="trebuchet ms, sans-serif" color="#ffffff">Extrait d'un documentaire par Aubert TEremblay.</font>]]></data>
+
+
+
+
+
+
+
+</krpano>
