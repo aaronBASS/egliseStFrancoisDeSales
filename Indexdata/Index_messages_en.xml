@@ -5,70 +5,35 @@
 <!--         Messages         -->
 <!-- ************************ -->
 
-  <data name="en_project_title"><![CDATA[Église Saint-François-de-Sales | Photos Denis Baribault | Montage Aaron Bass]]></data>
-  <data name="en_project_author_name"><![CDATA[Denis Baribault et Aaron Bass]]></data>
-  <data name="en_project_author_url"><![CDATA[http://PortneufVirtuel]]></data>
+  <data name="en_project_title"><![CDATA[Église Saint-François-de-Sales | Ville de Neuville]]></data>
 
+
+
+  <data name="en_pano76_title"><![CDATA[Coeur 01 - centre]]></data>
 
 
   <data name="en_pano75_title"><![CDATA[Chair]]></data>
-  <data name="en_spotpoint173websiteViewer|websiteViewer|displaywebsitewebsite_url"><![CDATA[https://sketchfab.com/models/232ff0e132854bf1ae1ab3d62c436a20/embed]]></data>
-  <data name="en_spotpoint173websiteViewer|websiteViewer|displaywebsitewebsite_title"><![CDATA[]]></data>
-  <data name="en_spotpoint174websiteViewer|websiteViewer|displaywebsitewebsite_url"><![CDATA[https://sketchfab.com/models/488e3f23d9924187ac18996388f96e82/embed]]></data>
-  <data name="en_spotpoint174websiteViewer|websiteViewer|displaywebsitewebsite_title"><![CDATA[]]></data>
-  <data name="en_spotpoint180websiteViewer1|websiteViewer|displaywebsitewebsite_url"><![CDATA[http://www.histoireneuville.com/f6baldaquin.html]]></data>
-  <data name="en_spotpoint180websiteViewer1|websiteViewer|displaywebsitewebsite_title"><![CDATA[]]></data>
 
 
   <data name="en_pano17_title"><![CDATA[Nef01 - avant]]></data>
-  <data name="en_spotpoint270websiteViewer1|websiteViewer|displaywebsitewebsite_url"><![CDATA[http://www.histoireneuville.com/f6baldaquin.html]]></data>
-  <data name="en_spotpoint270websiteViewer1|websiteViewer|displaywebsitewebsite_title"><![CDATA[]]></data>
-  <data name="en_spotpoint272websiteViewer|websiteViewer|displaywebsitewebsite_url"><![CDATA[https://sketchfab.com/models/488e3f23d9924187ac18996388f96e82/embed]]></data>
-  <data name="en_spotpoint272websiteViewer|websiteViewer|displaywebsitewebsite_title"><![CDATA[]]></data>
-  <data name="en_spotpoint275websiteViewer1|websiteViewer|displaywebsitewebsite_url"><![CDATA[http://www.histoireneuville.com/f8antoineplamondon.html]]></data>
-  <data name="en_spotpoint275websiteViewer1|websiteViewer|displaywebsitewebsite_title"><![CDATA[]]></data>
 
 
   <data name="en_pano18_title"><![CDATA[Nef02 - centre]]></data>
-  <data name="en_spotpoint61websiteViewer|websiteViewer|displaywebsitewebsite_url"><![CDATA[https://sketchfab.com/models/232ff0e132854bf1ae1ab3d62c436a20/embed]]></data>
-  <data name="en_spotpoint61websiteViewer|websiteViewer|displaywebsitewebsite_title"><![CDATA[]]></data>
-  <data name="en_spotpoint276websiteViewer1|websiteViewer|displaywebsitewebsite_url"><![CDATA[http://www.histoireneuville.com/f8antoineplamondon.html]]></data>
-  <data name="en_spotpoint276websiteViewer1|websiteViewer|displaywebsitewebsite_title"><![CDATA[]]></data>
 
 
   <data name="en_pano19_title"><![CDATA[Nef03 - arriere]]></data>
 
 
   <data name="en_pano16_title"><![CDATA[Mezzanine]]></data>
-  <data name="en_spotpoint269websiteViewer1|websiteViewer|displaywebsitewebsite_url"><![CDATA[http://www.histoireneuville.com/f6baldaquin.html]]></data>
-  <data name="en_spotpoint269websiteViewer1|websiteViewer|displaywebsitewebsite_title"><![CDATA[]]></data>
-  <data name="en_spotpoint273websiteViewer1|websiteViewer|displaywebsitewebsite_url"><![CDATA[http://www.histoireneuville.com/f7lorgue.html]]></data>
-  <data name="en_spotpoint273websiteViewer1|websiteViewer|displaywebsitewebsite_title"><![CDATA[]]></data>
-  <data name="en_spotpoint467websiteViewer1|websiteViewer|displaywebsitewebsite_url"><![CDATA[http://www.histoireneuville.com/f8antoineplamondon.html]]></data>
-  <data name="en_spotpoint467websiteViewer1|websiteViewer|displaywebsitewebsite_title"><![CDATA[]]></data>
-
-
-  <data name="en_pano76_title"><![CDATA[Coeur 01 - centre]]></data>
-  <data name="en_spotpoint274websiteViewer1|websiteViewer|displaywebsitewebsite_url"><![CDATA[http://www.histoireneuville.com/f8antoineplamondon.html]]></data>
-  <data name="en_spotpoint274websiteViewer1|websiteViewer|displaywebsitewebsite_title"><![CDATA[]]></data>
-  <data name="en_spotpoint561_tooltip"><![CDATA[Chair]]></data>
 
 
   <data name="en_pano77_title"><![CDATA[Coeur02 - Arriere]]></data>
-  <data name="en_spotvideo147_tooltip"><![CDATA[Extrait d'un documentaire par Aubert Tremblay]]></data>
-  <data name="en_spotpoint157_tooltip"><![CDATA[Plein Écran]]></data>
 
 
   <data name="en_pano78_title"><![CDATA[Sacristie]]></data>
-  <data name="en_spotpoint277websiteViewer1|websiteViewer|displaywebsitewebsite_url"><![CDATA[http://www.histoireneuville.com/f8antoineplamondon.html]]></data>
-  <data name="en_spotpoint277websiteViewer1|websiteViewer|displaywebsitewebsite_title"><![CDATA[]]></data>
 
 
   <data name="en_pano79_title"><![CDATA[Trancept-01]]></data>
-  <data name="en_spotpoint167websiteViewer|websiteViewer|displaywebsitewebsite_url"><![CDATA[https://sketchfab.com/models/232ff0e132854bf1ae1ab3d62c436a20/embed]]></data>
-  <data name="en_spotpoint167websiteViewer|websiteViewer|displaywebsitewebsite_title"><![CDATA[]]></data>
-  <data name="en_spotpoint168websiteViewer|websiteViewer|displaywebsitewebsite_url"><![CDATA[https://sketchfab.com/models/488e3f23d9924187ac18996388f96e82/embed]]></data>
-  <data name="en_spotpoint168websiteViewer|websiteViewer|displaywebsitewebsite_title"><![CDATA[]]></data>
 
 
 
@@ -119,7 +84,6 @@
   <data name="en_vr_setup_unavailable"><![CDATA[VR mode[br]is unavailable on your device]]></data>
 
 
-  <data name="en_project_description"><![CDATA[<font face="georgia, serif">Église Saint-François-de-Sales | Ville de Neuvillelle de Neuville&nbsp;</font>]]></data>
 
 
 
@@ -141,8 +105,6 @@
 
 
 
-  <data name="en_spotvideo147_description"><![CDATA[<span style="color: rgb(255, 255, 255); font-family: 'trebuchet ms', sans-serif; background-color: rgb(0, 0, 0);">Extrait d'un documentaire par Aubert Tremblay</span>]]></data>
-  <data name="en_spotpoint157_description"><![CDATA[<font size="4" face="trebuchet ms, sans-serif" color="#ffffff">Extrait d'un documentaire par Aubert TEremblay.</font>]]></data>
 
 
 

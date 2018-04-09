@@ -2,7 +2,7 @@
 <krpano>
   <!-- Global variables used by actions and plugins -->
   <krpano 
-        tour_soundson="true" 
+        tour_soundson="false" 
         tour_soundsvolume="99" 
         tour_autotourenabled="false"
         tour_autorotateenabled="false"
@@ -92,18 +92,6 @@
     js(eventTourStarted());
   </action>
 
-<events name="ptp_audio_events" devices="mobile.or.tablet.or.safari" keep="true"
-  onTourStart="ptp_audio_start_event();"
-  />
-<action name="ptp_audio_start_event" devices="mobile.or.tablet.or.safari">
-  set(events[ptp_audio_events].onTourStart, null);
-  ptp_audio_start();
-</action>
-<action name="ptp_audio_start" devices="mobile.or.tablet.or.safari">
-  if (tour_soundson === true,
-    playTourSounds();
-  );
-</action>
 
 
 
@@ -120,12 +108,9 @@
     if (xml.scene != %1,
 
       interruptAnimation();
-      resetbackgroundsoundifneeded(%1);
-
-      set(videoscenestarttime, 0);
 
       for(set(scenei,0), scenei LT scene.count, inc(scenei),if(scene[get(scenei)].name == %1,
-      stopTourSoundsActions(true,true,true,false);
+      
 
 
       loadscene(%1, get(projection_current_params), NOPREVIEW|MERGE|KEEPVIEW|KEEPMOVING, get(ptblendmode));
@@ -679,9 +664,6 @@
 
 	<action name="webvr_onentervr">
 
-		if(device.mobile OR device.tablet OR device.safari,
-			ptp_audio_start();
-		);
 
 		vr_tour_start();
 
