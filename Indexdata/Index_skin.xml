@@ -2,33 +2,30 @@
 <krpano version="1.19">
 
     
-  <!-- Spot Style - ArrowUp 1 -->
+  <!-- Spot Style - ArrowUpPerspective -->
 
 
-  <style name="IconArrowUp1"
-         url="%FIRSTXML%/spots/iconasset_19_user_defaultpoint3.png"
+  <style name="IconArrowUpPerspective"
+         url="%FIRSTXML%/spots/iconasset_18_user_defaultpoint3.png"
          visible="false"
          edge="center"
-         zoom="true"
-
-         onloaded="if(scene[get(xml.scene)].planar,if(zoom,set(zoom, false);););"
-         onhover="onhoverIconArrowUp1"
-         onover="onoverIconArrowUp1"
-         onout="onoutIconArrowUp1"
+         onhover="onhoverIconArrowUpPerspective"
+         onover="onoverIconArrowUpPerspective"
+         onout="onoutIconArrowUpPerspective"
 
          height="70"
          width="70"
          />
-  <action name="onhoverIconArrowUp1">
+  <action name="onhoverIconArrowUpPerspective">
     showtooltip('hotspot');
   </action>
-  <action name="onoverIconArrowUp1">
+  <action name="onoverIconArrowUpPerspective">
 tween(scale, 1.2);
 
 pauseautorotation(forcehotspot);
 
   </action>
-  <action name="onoutIconArrowUp1">
+  <action name="onoutIconArrowUpPerspective">
     hideTooltip();
     tween(scale, 1);
 
@@ -46,9 +43,6 @@ resumeautorotation(forcehotspot);
          url="%FIRSTXML%/spots/iconasset_5_user_defaultpoint9.png"
          visible="false"
          edge="center"
-         zoom="true"
-
-         onloaded="if(scene[get(xml.scene)].planar,if(zoom,set(zoom, false);););"
          onhover="onhoverIconArrowLeft"
          onover="onoverIconArrowLeft"
          onout="onoutIconArrowLeft"
@@ -83,9 +77,6 @@ resumeautorotation(forcehotspot);
          url="%FIRSTXML%/spots/iconasset_19_user_defaultpoint10.png"
          visible="false"
          edge="center"
-         zoom="true"
-
-         onloaded="if(scene[get(xml.scene)].planar,if(zoom,set(zoom, false);););"
          onhover="onhoverIconArrowUp"
          onover="onoverIconArrowUp"
          onout="onoutIconArrowUp"
@@ -120,9 +111,6 @@ resumeautorotation(forcehotspot);
          url="%FIRSTXML%/spots/iconasset_7_user_defaultpoint11.png"
          visible="false"
          edge="center"
-         zoom="true"
-
-         onloaded="if(scene[get(xml.scene)].planar,if(zoom,set(zoom, false);););"
          onhover="onhoverIconArrowDown"
          onover="onoverIconArrowDown"
          onout="onoutIconArrowDown"
@@ -157,9 +145,6 @@ resumeautorotation(forcehotspot);
          url="%FIRSTXML%/spots/iconasset_19_user_defaultpoint12.png"
          visible="false"
          edge="center"
-         zoom="true"
-
-         onloaded="if(scene[get(xml.scene)].planar,if(zoom,set(zoom, false);););"
          onhover="onhoverIconSpotUp"
          onover="onoverIconSpotUp"
          onout="onoutIconSpotUp"
@@ -194,9 +179,6 @@ resumeautorotation(forcehotspot);
          url="%FIRSTXML%/spots/iconasset_9_user_defaultpoint13.png"
          visible="false"
          edge="center"
-         zoom="true"
-
-         onloaded="if(scene[get(xml.scene)].planar,if(zoom,set(zoom, false);););"
          onhover="onhoverIconArrowRight"
          onover="onoverIconArrowRight"
          onout="onoutIconArrowRight"
@@ -222,597 +204,5 @@ resumeautorotation(forcehotspot);
   </action>
 
 
-
-<!-- ********** -->
-<!-- Previous/Next Strips -->
-<!-- id : prevnexttheme2 -->
-<!-- ********** -->
-
-  <style name="prevnexttheme2btn_alpha_style" 
-    alpha="0.0" onover="set(alpha, 1);" onout="set(alpha, 0.0);"
-    devices="desktop"
-  />
-  <style name="prevnexttheme2btn_alpha_style" 
-    alpha="1.0"
-    devices="tablet.or.mobile"
-  />
-  <layer name="prevnexttheme2btn_prev_pano" keep="true" align="left"
-         height="102%"
-         width="5%"
-         type="container"
-         bgcapture="true"
-         bgalpha="0.20000000000000001"
-         bgcolor="0xeeeeee"
-         zorder="1"
-         onclick="loadPreviousScene();
-"
-         style="prevnexttheme2btn_alpha_style"
-         visible="false">
-    <layer name="prevnexttheme2prevPanoramaArrow" keep="true" align="center"
-         url="%FIRSTXML%/graphics/prevnextstrips/btn_scroll_left.png"
-         alpha="1"
-         zorder="0"
-         onclick="loadPreviousScene();
-"
-    />
-  </layer>
-
-  <layer name="prevnexttheme2btn_next_pano" keep="true" align="right"
-         height="102%"
-         width="5%"
-         type="container"
-         bgcapture="true"
-         bgalpha="0.20000000000000001"
-         bgcolor="0xeeeeee"
-         zorder="1"
-         onclick="loadNextScene();
-"
-         style="prevnexttheme2btn_alpha_style"
-         visible="false">
-    <layer name="prevnexttheme2nextPanoramaArrow" keep="true" align="center"
-         url="%FIRSTXML%/graphics/prevnextstrips/btn_scroll_right.png"
-         alpha="1"
-         zorder="0"
-         onclick="loadNextScene();
-"
-    />
-  </layer>
-
-  <events name="prevnexttheme2hideshowcontrolsevent" 
-    onTourStart="prevnexttheme2showPrevNextControls();"
-    keep="true"/>
-  <action name="prevnexttheme2hidePrevNextControls">
-    set(layer[prevnexttheme2btn_prev_pano].visible, false);
-    set(layer[prevnexttheme2btn_next_pano].visible, false);
-  </action>
-  <action name="prevnexttheme2showPrevNextControls">
-    set(layer[prevnexttheme2btn_prev_pano].visible, true);
-    set(layer[prevnexttheme2btn_next_pano].visible, true);
-  </action>
-
-
-<!-- ********** -->
-<!-- Double Click -->
-<!-- id : doubleclick -->
-<!-- ********** -->
-
-  <plugin name="doubleclick" url.flash="%FIRSTXML%/graphics/doubleclick/fieldofview_dc.swf" url.html5="%FIRSTXML%/graphics/doubleclick/dctouch.min.js" keep="true" ondblclick="doubleclick_ondoubleclick();"/>
-  <action name="doubleclick_ondoubleclick">switchFullscreen();
-
-
-  </action>
-
-<!-- ********** -->
-<!-- Context menu -->
-<!-- id : contextmenu -->
-<!-- ********** -->
-  <contextmenu fullscreen="false" versioninfo="false" touch="true">
-    <item name="normal"        onclick="setViewNormal();
-" separator="true"/>
-    <item name="fisheye"       onclick="setViewFisheye();
-"/>
-    <item name="architectural" onclick="setViewArchitectural();
-"/>
-    <item name="littleplanet"  onclick="setViewLittlePlanet();
-"/>
-    <item name="fullscreenentry" onclick="enterFullscreen();
-" separator="true"/>
-  </contextmenu>
-
-  <events name="contextmenuevents" keep="true" 
-    onenterfullscreen="updateContextMenu" onexitfullscreen="updateContextMenu" 
-    onxmlcomplete="updateContextMenu" 
-    changetourlanguage="updateContextMenu" 
-    />
-  <events name="contextmenuvrevents" keep="true" 
-    onvravailable="updateContextMenu();" onvrunavailable="updateContextMenu();"
-    devices="html5"
-    />
-  <action name="updateContextMenu">
-    getmessage(contextmenu.item[normal].caption, contextmenunormallabel);
-    getmessage(contextmenu.item[architectural].caption, contextmenuarchitecturallabel);
-    set(sceneisfull360, false);
-    if(scene[get(xml.scene)].full360,
-      sub(viewhfov, panoview.hmax, panoview.hmin);
-      if (viewhfov == 360,
-        sub(viewvfov, panoview.vmax, panoview.vmin);
-        if (viewvfov == 180,
-          set(sceneisfull360, true);
-        );
-      );
-    );
-    if (sceneisfull360 AND (device.webgl OR device.flash),
-      set(contextmenu.item[fisheye].visible, true);
-      getmessage(contextmenu.item[fisheye].caption, contextmenufisheyelabel);
-      set(contextmenu.item[littleplanet].visible, true);
-      getmessage(contextmenu.item[littleplanet].caption, contextmenulittleplanetlabel);
-    ,
-      set(contextmenu.item[fisheye].visible, false);
-      set(contextmenu.item[littleplanet].visible, false);
-    );
-    if (device.fullscreensupport,
-      if(tour_fullscreen,
-        getmessage(contextmenu.item[fullscreenentry].caption, contextmenucloseFsLabel);
-        set(contextmenu.item[fullscreenentry].onclick, exitFullscreen();
-);
-       ,
-        getmessage(contextmenu.item[fullscreenentry].caption, contextmenuopenFsLabel);
-        set(contextmenu.item[fullscreenentry].onclick, enterFullscreen();
-);
-      );
-     ,
-      set(contextmenu.item[fullscreenentry].visible, false);
-    );
-  </action>
-
-<!-- ********** -->
-<!-- Progress Bar and Loopings -->
-<!-- id : progressbar -->
-<!-- ********** -->
-
-  <progress showwait.flash="loopings(
-				0xffffff,
-				15,15,
-				0,0,
-				0xffffff,0,
-				0,0,center
-				)"
-			showreloads.flash="false"
-			parent=""
-			/>
-
-
-  <layer name="progressbar_bg"
-    align="bottom"
-    bgcolor="0xffffff"
-    bgalpha="1.0"
-    bgborder="0"
-    onclick="progressbar_stop();"
-    enabled="true"
-    handcursor="false"
-    bgcapture="true"
-    x="0" y="0"
-    type="container"
-    width="100%" height="5"
-    visible="true"
-    keep="true">
-      <layer name="progressbar_bar" 
-        align="topleft"
-        bgcolor="0x555555"
-        bgalpha="1.0"
-        x="0" y="0"
-        type="container"
-        width="0%"
-        height="100%"
-        enabled="false"
-        keep="true"
-        />
-  </layer>
-  <action name="progressbar_start">
-    if(scene[get(xml.scene)].video,
-      progressbar_stop();
-    ,
-      mul(progress_val, get(progress.progress), 100);
-      txtadd(progress_percent, get(progress_val),"%");
-      set(layer[progressbar_bar].width, get(progress_percent));
-    if (device.html5, 
-      mul(xcrop, layer[progressbarwheel].frame, 64);
-      txtadd(layer[progressbarwheel].crop, get(xcrop), '|0|64|64');
-      
-      inc(layer[progressbarwheel].frame);
-      if(layer[progressbarwheel].frame GE layer[progressbarwheel].frames, set(layer[progressbarwheel].frame,0));
-    );
-      delayedcall(progressbar_progresscall, 0.1,progressbar_start());
-      if(progress_val == 100,
-        progressbar_stop();
-      );
-    );
-  </action>
-  <action name="progressbar_stop">
-    stopdelayedcall(progressbar_progresscall);
-    set(layer[progressbar_bg].visible, false);
-    set(layer[progressbar_bar].width, "0%");
-    if (device.html5, set(layer[progressbarwheel].visible, false););
-  </action>
-  <events name="progressbar_events" onloadcomplete="progressbar_stop();" onxmlcomplete="if (device.html5,set(layer[progressbarwheel].visible, true););set(layer[progressbar_bg].visible, true);progressbar_start();" keep="true" />
-
-  <!-- loading wheel -->
-  <layer name="progressbarwheel"
-         keep="true"
-         devices="html5"
-         visible="false"
-         url="%FIRSTXML%/graphics/progressbarandloopings/loadingwheel.png"
-         crop="0|0|64|64"
-         align="center"
-         x="0" y="0"
-         frame="0" frames="12"
-         width="30"
-         height="30" />
-
-<!-- ********** -->
-<!-- SketchFab -->
-<!-- id : websiteViewer -->
-<!-- ********** -->
-
-<ptplugin name="websiteViewer" engine="kolorBox">
-	<settings>
-		<option name="position" value="center" type="string" />
-		<option name="margin_x" value="0" type="int" />
-		<option name="margin_y" value="0" type="int" />
-		<option name="external_padding" value="15" type="int" />
-		<option name="draggable_box" value="false" type="bool" />
-		<option name="container_auto_size" value="true" type="bool" />
-		<option name="container_width" value="100" type="int" />
-		<option name="container_width_unit" value="percent" type="string" />
-		<option name="container_height" value="100" type="int" />
-		<option name="container_height_unit" value="percent" type="string" />
-		<option name="container_color" value="ffffff" type="string" />
-		<option name="container_alpha" value="0.80000000000000004" type="float" />
-		<option name="container_topleft_border_radius" value="15" type="int" />
-		<option name="container_topright_border_radius" value="15" type="int" />
-		<option name="container_bottomleft_border_radius" value="15" type="int" />
-		<option name="container_bottomright_border_radius" value="15" type="int" />
-		<option name="container_border_width" value="0" type="int" />
-		<option name="container_border_color" value="ffffff" type="string" />
-		<option name="container_border_alpha" value="1" type="float" />
-		<option name="overlay_displayed" value="false" type="bool" />
-		<option name="overlay_color" value="000000" type="string" />
-		<option name="overlay_alpha" value="0.50000762951094835" type="float" />
-
-		<option name="title_displayed" value="false" type="bool" />
-		<option name="title_position" value="top" type="string" />
-		<option name="title_font" value="Verdana" type="string" />
-		<option name="title_size" value="14" type="int" />
-		<option name="title_weight" value="normal" type="string" />
-		<option name="title_style" value="normal" type="string" />
-		<option name="title_decoration" value="none" type="string" />
-		<option name="title_color" value="000000" type="string" />
-		<option name="caption_displayed" value="false" type="bool" />
-		<option name="iframe_scrolling" value="auto" type="string" />
-		<option name="iframe_default_width" value="1100" type="int" />
-		<option name="iframe_default_height" value="800" type="int" />
-		<option name="iframe_devices_width" value="1100" type="int" />
-		<option name="iframe_devices_height" value="800" type="int" />
-		<option name="force_ios_scrolling" value="true" type="bool" />
-		<option name="fullscreen_displayed" value="true" type="bool" />
-		<option name="fullscreen_position" value="top" type="string" />
-		<option name="fullscreen_text" value="websiteViewerfullscreen_text" type="string" />
-
-
-
-
-		<option name="close_displayed" value="true" type="bool" />
-		<option name="close_position" value="topright" type="string" />
-		<option name="close_text" value="websiteViewerclose_text" type="string" />
-
-		<option name="close_callback" value="invokeKrFunction('closeKolorBoxCallback_websiteViewer')" type="string" />
-		<option name="zorder" value="5" type="int" />
-		<option name="use_i18n" value="true" type="bool" />
-	</settings>
-	<internaldata>
-		
-	</internaldata>
-</ptplugin>
-
-<action name="kolorBoxJsReady_websiteViewer">
-	set(ptplugin[websiteViewer].jsready, true);
-</action>
-
-<action name="openWebsite_websiteViewer">
-	ifnot(ptplugin[websiteViewer].isOpen,
-		set(ptplugin[websiteViewer].isOpen, true);
-		set(ptplugin[websiteViewer].doNotDeleteMe, false);
-		getmessage(websiteViewer_boxurl, %1);
-		txtadd(websiteViewer_boxurl, ?iframe=true);
-		pauseautorotation(forceplugin);
-
-		js(invokePluginFunction(websiteViewer, loadSingleArrayItem, get(websiteViewer_boxurl), %2));
-		events.dispatch(onremovedisplayedobject);
-	,
-		if('%1' != websiteViewer_boxurl,
-			closeKolorBox_websiteViewer();
-			delayedcall(0.3,openWebsite_websiteViewer(%1,%2););
-		);
-	);
-</action>
-
-<action name="toggleWebsite_websiteViewer">
-	js(invokePluginFunction(websiteViewer, toggleKolorBox, %1));
-</action>
-
-
-<action name="closeKolorBox_websiteViewer">
-	js(invokePluginFunction(websiteViewer, closeKolorBox));
-</action>
-
-<action name="closeKolorBoxCallback_websiteViewer">
-	resumeautorotation(forceplugin);
-
-	set(ptplugin[websiteViewer].isOpen, false);
-</action>
-
-<action name="changeLanguage_websiteViewer">
-	if(ptplugin[websiteViewer].jsready,
-		stopdelayedcall(delay_websiteViewer);
-		js(invokePluginFunction(websiteViewer, changeLanguage));
-	,
-		delayedcall(delay_websiteViewer, 0.1, changeLanguage_websiteViewer(););
-	);
-</action>
-
-<events name="kolorBoxEvents_websiteViewer" 
-	keep="true"
-	changetourlanguage="changeLanguage_websiteViewer();"
-	/>
-
-<!-- ********** -->
-<!-- Website Box1 -->
-<!-- id : websiteViewer1 -->
-<!-- ********** -->
-
-<ptplugin name="websiteViewer1" engine="kolorBox">
-	<settings>
-		<option name="position" value="center" type="string" />
-		<option name="margin_x" value="0" type="int" />
-		<option name="margin_y" value="0" type="int" />
-		<option name="external_padding" value="15" type="int" />
-		<option name="draggable_box" value="false" type="bool" />
-		<option name="container_auto_size" value="true" type="bool" />
-		<option name="container_width" value="100" type="int" />
-		<option name="container_width_unit" value="percent" type="string" />
-		<option name="container_height" value="100" type="int" />
-		<option name="container_height_unit" value="percent" type="string" />
-		<option name="container_color" value="ffffff" type="string" />
-		<option name="container_alpha" value="0.80000000000000004" type="float" />
-		<option name="container_topleft_border_radius" value="15" type="int" />
-		<option name="container_topright_border_radius" value="15" type="int" />
-		<option name="container_bottomleft_border_radius" value="15" type="int" />
-		<option name="container_bottomright_border_radius" value="15" type="int" />
-		<option name="container_border_width" value="0" type="int" />
-		<option name="container_border_color" value="ffffff" type="string" />
-		<option name="container_border_alpha" value="1" type="float" />
-		<option name="overlay_displayed" value="false" type="bool" />
-		<option name="overlay_color" value="000000" type="string" />
-		<option name="overlay_alpha" value="0.50000762951094835" type="float" />
-
-		<option name="title_displayed" value="false" type="bool" />
-		<option name="title_position" value="top" type="string" />
-		<option name="title_font" value="Verdana" type="string" />
-		<option name="title_size" value="14" type="int" />
-		<option name="title_weight" value="normal" type="string" />
-		<option name="title_style" value="normal" type="string" />
-		<option name="title_decoration" value="none" type="string" />
-		<option name="title_color" value="000000" type="string" />
-		<option name="caption_displayed" value="false" type="bool" />
-		<option name="iframe_scrolling" value="auto" type="string" />
-		<option name="iframe_default_width" value="1100" type="int" />
-		<option name="iframe_default_height" value="800" type="int" />
-		<option name="iframe_devices_width" value="1100" type="int" />
-		<option name="iframe_devices_height" value="800" type="int" />
-		<option name="force_ios_scrolling" value="true" type="bool" />
-		<option name="fullscreen_displayed" value="true" type="bool" />
-		<option name="fullscreen_position" value="topleft" type="string" />
-		<option name="fullscreen_text" value="websiteViewer1fullscreen_text" type="string" />
-
-
-
-
-		<option name="close_displayed" value="true" type="bool" />
-		<option name="close_position" value="topright" type="string" />
-		<option name="close_text" value="websiteViewer1close_text" type="string" />
-
-		<option name="close_callback" value="invokeKrFunction('closeKolorBoxCallback_websiteViewer1')" type="string" />
-		<option name="zorder" value="6" type="int" />
-		<option name="use_i18n" value="true" type="bool" />
-	</settings>
-	<internaldata>
-		
-	</internaldata>
-</ptplugin>
-
-<action name="kolorBoxJsReady_websiteViewer1">
-	set(ptplugin[websiteViewer1].jsready, true);
-</action>
-
-<action name="openWebsite_websiteViewer1">
-	ifnot(ptplugin[websiteViewer1].isOpen,
-		set(ptplugin[websiteViewer1].isOpen, true);
-		set(ptplugin[websiteViewer1].doNotDeleteMe, false);
-		getmessage(websiteViewer1_boxurl, %1);
-		txtadd(websiteViewer1_boxurl, ?iframe=true);
-		pauseautorotation(forceplugin);
-
-		js(invokePluginFunction(websiteViewer1, loadSingleArrayItem, get(websiteViewer1_boxurl), %2));
-		events.dispatch(onremovedisplayedobject);
-	,
-		if('%1' != websiteViewer1_boxurl,
-			closeKolorBox_websiteViewer1();
-			delayedcall(0.3,openWebsite_websiteViewer1(%1,%2););
-		);
-	);
-</action>
-
-<action name="toggleWebsite_websiteViewer1">
-	js(invokePluginFunction(websiteViewer1, toggleKolorBox, %1));
-</action>
-
-
-<action name="closeKolorBox_websiteViewer1">
-	js(invokePluginFunction(websiteViewer1, closeKolorBox));
-</action>
-
-<action name="closeKolorBoxCallback_websiteViewer1">
-	resumeautorotation(forceplugin);
-
-	set(ptplugin[websiteViewer1].isOpen, false);
-</action>
-
-<action name="changeLanguage_websiteViewer1">
-	if(ptplugin[websiteViewer1].jsready,
-		stopdelayedcall(delay_websiteViewer1);
-		js(invokePluginFunction(websiteViewer1, changeLanguage));
-	,
-		delayedcall(delay_websiteViewer1, 0.1, changeLanguage_websiteViewer1(););
-	);
-</action>
-
-<events name="kolorBoxEvents_websiteViewer1" 
-	keep="true"
-	changetourlanguage="changeLanguage_websiteViewer1();"
-	/>
-
-<action name="setViewFisheye">
-	set(sceneisfull360, false);
-	if(scene[get(xml.scene)].full360,
-		sub(viewhfov, panoview.hmax, panoview.hmin);
-		if (viewhfov == 360,
-			sub(viewvfov, panoview.vmax, panoview.vmin);
-			if (viewvfov == 180,
-				set(sceneisfull360, true);
-			);
-		);
-	);
-	if (sceneisfull360 AND (device.webgl OR device.flash),
-		if(normalViewActivated,stopSetViewTweens(););
-		if(current_view_isflat === true,
-			setViewNonFlat(VFOV);
-		);
-		setViewFisheyeComplete();
-	);
-</action>
-
-<action name="setViewFisheyeComplete">
-	set(view.fisheyefovlink, 1.5);
-	set(view.fovmax, get(panoview.fovmax));
-	tween(view.architectural, 0.0, distance(1.0, 0.30));
-	tween(view.fisheye, 0.0, distance(1.0, 0.30), easeOutQuad,
-		set(view.stereographic,false);
-		tween(view.fisheye, 0.45, distance(1.0, 0.75));
-		tween(view.vlookat, get(panoview.v), distance(90, 0.45));
-	);
-	tween(view.pannini, 0.0, distance(1.0, 0.75), easeOutQuad, if(panniniViewActivated,restoreViewFromPannini();););
-	tween(view.fov, get(panoview.fov), distance(50, 0.45));
-</action>
-
-<action name="setViewLittlePlanet">
-	set(sceneisfull360, false);
-	if(scene[get(xml.scene)].full360,
-		sub(viewhfov, panoview.hmax, panoview.hmin);
-		if (viewhfov == 360,
-			sub(viewvfov, panoview.vmax, panoview.vmin);
-			if (viewvfov == 180,
-				set(sceneisfull360, true);
-			);
-		);
-	);
-	if (sceneisfull360 AND (device.webgl OR device.flash),
-		if(normalViewActivated,stopSetViewTweens(););
-		if(current_view_isflat === true,
-			setViewNonFlat(VFOV);
-		);
-		setViewLittlePlanetComplete();
-	);
-</action>
-
-<action name="setViewLittlePlanetComplete">
-	set(backtonormalfirst,false);
-	if(view.pannini GE 1.0, set(backtonormalfirst,true));
-	if(view.stereographic == false, set(backtonormalfirst,true));
-	if(backtonormalfirst, hideTooltip();tween(view.fisheye, 0.0 ,distance(1.0, 0.25), easeOutQuad, WAIT); );
-	set(view.stereographic, true);
-	set(view.fisheyefovlink, 1.5);
-	tween(view.architectural, 0.0, 0.25);
-	tween(view.vlookat, 90, distance(179, 1.50));
-	tween(view.pannini, 0.0, distance(1.0, 0.75), easeOutQuad, if(panniniViewActivated,restoreViewFromPannini();););
-	if(panoview.fovmax LE 150, set(view.fovmax, 150); , set(view.fovmax, get(panoview.fovmax)); );
-	tween(view.fisheye, 1.0, distance(1.0, 0.75));
-	tween(view.fov, 150, distance(179, 0.75));
-</action>
-
-  <!-- Fullscreen Management -->
-  <action name="exitFullScreen" devices="fullscreensupport">set(tour_fullscreen,false);js(setFullscreen(false));</action>
-  <action name="enterFullScreen" devices="fullscreensupport">set(tour_fullscreen,true);js(setFullscreen(true));</action>
-  <action name="switchFullScreen">if(tour_fullscreen,exitFullScreen();,enterFullScreen(););</action>
-
-  
-  <events name="krpanoExitFullscreenEvent"
-    onexitfullscreen="if(tour_fullscreen,exitFullScreenChangeEvent(););"
-    keep="true" />
-
-  <action name="exitFullScreenChangeEvent" devices="fullscreensupport">set(tour_fullscreen,false);events.dispatch(onexitfullscreen);</action>
-  <action name="enterFullScreenChangeEvent" devices="fullscreensupport">set(tour_fullscreen,true);events.dispatch(onenterfullscreen);</action>
-  <action name="exitFullScreenFallback">set(fullscreen,false);</action>
-  <action name="enterFullScreenFallback">set(fullscreen,true);</action>
-  
-  <action name="resizeFullScreenEvent">delayedcall(0,updatescreen(););</action>
-
-<action name="setViewNormal">
-	stopSetViewTweens();
-	if(current_view_isflat === true,
-		setViewNonFlat(VFOV);
-	);
-	setViewNormalComplete();
-</action>
-
-<action name="setViewNormalComplete">
-	set(view.fisheyefovlink, 0.5);
-	set(view.fovmax, get(panoview.fovmax));
-	tween(view.architectural, 0.0, distance(1.0, 0.45));
-	tween(view.pannini, 0.0, distance(1.0, 0.45), easeOutQuad, if(panniniViewActivated,restoreViewFromPannini();););
-	tween(view.vlookat, get(panoview.v), distance(90, 0.45));
-	tween(view.fov, get(panoview.fov), distance(50, 0.45));
-	tween(view.fisheye, 0.0, distance(1.0, 0.45),
-		set(view.stereographic,false);
-	);
-</action>
-
-<krpano normalViewActivated="true" />
-<action name="stopSetViewTweens">
-	stoptween(view.fov);
-	stoptween(view.vlookat);
-	stoptween(view.fisheye);
-	stoptween(view.architectural);
-	stoptween(view.pannini);
-</action>
-
-<action name="setViewArchitectural">
-	if(normalViewActivated,stopSetViewTweens(););
-	if(current_view_isflat === true,
-		setViewNonFlat(VFOV);
-	);
-	setViewArchitecturalComplete();
-</action>
-
-<action name="setViewArchitecturalComplete">
-	set(view.fovmax, get(panoview.fovmax));
-	set(view.fisheyefovlink, 0.5);
-	tween(view.architectural, 1.0, distance(1.0, 0.45));
-	tween(view.pannini, 0.0, distance(1.0, 0.45), easeOutQuad, if(panniniViewActivated,restoreViewFromPannini();););
-	tween(view.fisheye, 0.0, distance(1.0, 0.45), easeOutQuad, 
-		set(view.stereographic,false);
-		tween(view.vlookat, get(panoview.v), distance(90, 0.45));
-	);
-	tween(view.fov, get(panoview.fov), distance(50, 0.45));
-</action>
 
 </krpano>

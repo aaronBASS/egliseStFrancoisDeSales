@@ -40,16 +40,6 @@
 
 
 
-  <data name="en_contextmenuopenFsLabel"><![CDATA[Enter Fullscreen]]></data>
-  <data name="en_contextmenucloseFsLabel"><![CDATA[Exit Fullscreen]]></data>
-  <data name="en_contextmenunormallabel"><![CDATA[Normal View]]></data>
-  <data name="en_contextmenufisheyelabel"><![CDATA[Fisheye View]]></data>
-  <data name="en_contextmenuarchitecturallabel"><![CDATA[Architectural View]]></data>
-  <data name="en_contextmenulittleplanetlabel"><![CDATA[Little Planet View]]></data>
-  <data name="en_websiteViewerfullscreen_text"><![CDATA[Fullscreen mode]]></data>
-  <data name="en_websiteViewerclose_text"><![CDATA[Close]]></data>
-  <data name="en_websiteViewer1fullscreen_text"><![CDATA[Fullscreen mode]]></data>
-  <data name="en_websiteViewer1close_text"><![CDATA[Close]]></data>
 
 
   <data name="en_vr_setup_hmd0"><![CDATA[SELECT YOUR HMD]]></data>

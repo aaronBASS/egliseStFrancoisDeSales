@@ -78,23 +78,130 @@
   </action>
 
 
-
   <action name="startbehavioursxmlcompleteaction">
+    if (skipintro !== null,
+      set(tour_firstlittleplanet, false);
+      ifnot (tour_firststartactiondone,
+        set(tour_firststartactiondone, true);
+        events.dispatch(onTourStart);
+      );
+      events.dispatch(onPanoStart);
+    ,
     ifnot (tour_firststartactiondone,
-      set(tour_firststartactiondone, true);
-      events.dispatch(onTourStart);
+
+      set(sceneisfull360, false);
+      if (scene[get(xml.scene)].full360,
+        sub(viewhfov, panoview.hmax, panoview.hmin);
+        if (viewhfov == 360,
+          sub(viewvfov, panoview.vmax, panoview.vmin);
+          if (viewvfov == 180,
+            set(sceneisfull360, true);
+          );
+        );
+      );
+      
+      
+      stoptween(view.fov);
+      stoptween(view.fovmax);
+      stoptween(view.hlookat);
+      stoptween(view.vlookat);
+      stoptween(view.fisheye);
+      
+      if (sceneisfull360 AND (device.webgl OR device.flash),
+	    setlittleplanet();
+      );
+
+
+    ifnot (sceneisfull360,
+      
+      set(view.fovmax, get(panoview.fovmax));
+      set(view.hlookat, get(panoview.h));
+      set(view.vlookat, get(panoview.v));
+      set(view.fisheye, 0.0);
+      set(view.architectural, 0.0);
+      set(view.stereographic, false);
+      set(view.pannini, 0.0);
+      set(view.fisheyefovlink, 0.5);
+      set(view.fov, get(panoview.fov));
+      
+      ifnot (tour_firststartactiondone,
+        events.dispatch(onTourStart);
+      );
+      events.dispatch(onPanoStart);
     );
-    events.dispatch(onPanoStart);
+
+    set(tour_firststartactiondone, true);
+    ,
+      events.dispatch(onPanoStart, true);
+    );
+    );
+  </action>
+
+  <action name="startLittlePlanetIntroEffect">
+    if(tour_firstlittleplanet,
+      set(sceneisfull360, false);
+      if (scene[get(xml.scene)].full360,
+        sub(viewhfov, panoview.hmax, panoview.hmin);
+        if (viewhfov == 360,
+          sub(viewvfov, panoview.vmax, panoview.vmin);
+          if (viewvfov == 180,
+            set(sceneisfull360, true);
+          );
+        );
+      );
+      if (sceneisfull360,
+        fromlittleplanetintrotonormalview();
+      );
+    );
+  </action>
+
+  <action name="setlittleplanet">
+    set(view.architectural, 0.0);
+    set(view.hlookat, get(panoview.h));
+    set(view.vlookat, 90);
+    set(view.pannini, 0.0);
+    if(panoview.fovmax LE 150,
+      set(view.fovmax, 150);
+    ,
+      set(view.fovmax, get(panoview.fovmax));
+    );
+    set(view.stereographic, true);
+    set(view.fisheyefovlink, 1.5);
+    set(view.fisheye, 1.0);
+    set(view.fov, 150);
+    
+    events.dispatch(onStartLittlePlanetIntroduction);
+  </action>
+  <action name="fromlittleplanetintrotonormalview">
+	tweennormalview();
+  </action>
+  <action name="tweennormalview">
+    hideTooltip();
+    tween(view.fovmax, get(panoview.fovmax), 3, easeoutquad);
+    tween(view.hlookat,  get(panoview.h), 3, easeoutquad);
+    tween(view.vlookat, get(panoview.v), 3, easeoutquad);
+    if(panoview.fov LE view.fov, tween(view.fov, get(panoview.fov), 3, easeoutquad); );
+    tween(view.pannini, 0.0, 3, easeoutquad);
+    tween(view.fisheye, 0.0, 3, easeoutquad, 
+      set(view.architectural, 0.0);
+      set(view.stereographic, false);
+      set(view.fisheyefovlink, 0.5);
+      
+      
+      events.dispatch(onEndLittlePlanetIntroduction, true);
+      if (tour_firstlittleplanet,
+        events.dispatch(onTourStart, true);
+        set(tour_firstlittleplanet, false);
+      );
+      events.dispatch(onPanoStart, true);
+    );
   </action>
 
 
 
 
 
-  <events name="startTourForJsEvents" onTourStart="startTourForJsEventsAction();" keep="true" />
-  <action name="startTourForJsEventsAction">
-    js(eventTourStarted());
-  </action>
+
 
 
 
@@ -672,50 +779,7 @@
   </action>
 
 
-  <!-- Cursors management -->
-  <cursors standard="" dragging="" moving="" />
-  <events name="cursorsEvents" onnewpano="setCursor" oncontrolmodechanged="setCursor" keep="true" devices="desktop" />
-  <action name="setCursor">
-    if (tour_controlmodemousetype == moveto, 
-      setarrowcursors();
-     ,
-      sethandcursors();
-    );
-  </action>
-  <!-- Change Cursors Appearance -->
-
-  <action name="setarrowcursors">
-    if (device.flash,
-      ifnot(device.mac,
-        set(cursors.url  , %FIRSTXML%/graphics/cursors_move.png); 
-        set(cursors.type , 8way);
-        set(cursors.move    ,   0|0|16|16);
-        set(cursors.drag    ,  16|0|16|16);
-        set(cursors.arrow_u ,  32|0|16|16);
-        set(cursors.arrow_d ,  48|0|16|16);
-        set(cursors.arrow_l ,  64|0|16|16);
-        set(cursors.arrow_r ,  80|0|16|16);
-        set(cursors.arrow_lu,  96|0|16|16);
-        set(cursors.arrow_ru, 112|0|16|16);
-        set(cursors.arrow_rd, 128|0|16|16);
-        set(cursors.arrow_ld, 144|0|16|16);
-      );
-    ,
-      js(kpanotour.Cursors.setMoveCursor());
-    );
-  </action>
-  <action name="sethandcursors">
-    if (device.flash,
-      ifnot(device.mac,
-        set(cursors.url , %FIRSTXML%/graphics/cursors_drag.png);
-        set(cursors.type, 2way);
-        set(cursors.move,  0|0|32|32);
-        set(cursors.drag, 32|0|32|32);
-      );
-    ,
-      js(kpanotour.Cursors.setDragCursor());
-    );
-  </action>
+  <cursors standard="default" dragging="grab" moving="move" />
 
 
 
