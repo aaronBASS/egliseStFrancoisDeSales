@@ -13,8 +13,8 @@
          onover="onoverIconArrowUpPerspective"
          onout="onoutIconArrowUpPerspective"
 
-         height="70"
-         width="70"
+         height="40"
+         width="40"
          />
   <action name="onhoverIconArrowUpPerspective">
     showtooltip('hotspot');
@@ -22,14 +22,12 @@
   <action name="onoverIconArrowUpPerspective">
 tween(scale, 1.2);
 
-pauseautorotation(forcehotspot);
 
   </action>
   <action name="onoutIconArrowUpPerspective">
     hideTooltip();
     tween(scale, 1);
 
-resumeautorotation(forcehotspot);
 
   </action>
 
@@ -47,8 +45,8 @@ resumeautorotation(forcehotspot);
          onover="onoverIconArrowLeft"
          onout="onoutIconArrowLeft"
 
-         height="35"
-         width="35"
+         height="40"
+         width="40"
          />
   <action name="onhoverIconArrowLeft">
     showtooltip('hotspot');
@@ -56,14 +54,12 @@ resumeautorotation(forcehotspot);
   <action name="onoverIconArrowLeft">
 tween(scale, 1.2);
 
-pauseautorotation(forcehotspot);
 
   </action>
   <action name="onoutIconArrowLeft">
     hideTooltip();
     tween(scale, 1);
 
-resumeautorotation(forcehotspot);
 
   </action>
 
@@ -81,8 +77,8 @@ resumeautorotation(forcehotspot);
          onover="onoverIconArrowUp"
          onout="onoutIconArrowUp"
 
-         height="35"
-         width="35"
+         height="40"
+         width="40"
          />
   <action name="onhoverIconArrowUp">
     showtooltip('hotspot');
@@ -90,14 +86,12 @@ resumeautorotation(forcehotspot);
   <action name="onoverIconArrowUp">
 tween(scale, 1.2);
 
-pauseautorotation(forcehotspot);
 
   </action>
   <action name="onoutIconArrowUp">
     hideTooltip();
     tween(scale, 1);
 
-resumeautorotation(forcehotspot);
 
   </action>
 
@@ -115,8 +109,8 @@ resumeautorotation(forcehotspot);
          onover="onoverIconArrowDown"
          onout="onoutIconArrowDown"
 
-         height="35"
-         width="35"
+         height="40"
+         width="40"
          />
   <action name="onhoverIconArrowDown">
     showtooltip('hotspot');
@@ -124,48 +118,44 @@ resumeautorotation(forcehotspot);
   <action name="onoverIconArrowDown">
 tween(scale, 1.2);
 
-pauseautorotation(forcehotspot);
 
   </action>
   <action name="onoutIconArrowDown">
     hideTooltip();
     tween(scale, 1);
 
-resumeautorotation(forcehotspot);
 
   </action>
 
 
 
     
-  <!-- Spot Style - SpotUp -->
+  <!-- Spot Style - orthoUp -->
 
 
-  <style name="IconSpotUp"
-         url="%FIRSTXML%/spots/iconasset_19_user_defaultpoint12.png"
+  <style name="IconorthoUp"
+         url="%FIRSTXML%/spots/iconasset_18_user_defaultpoint12.png"
          visible="false"
          edge="center"
-         onhover="onhoverIconSpotUp"
-         onover="onoverIconSpotUp"
-         onout="onoutIconSpotUp"
+         onhover="onhoverIconorthoUp"
+         onover="onoverIconorthoUp"
+         onout="onoutIconorthoUp"
 
-         height="30"
-         width="30"
+         height="40"
+         width="40"
          />
-  <action name="onhoverIconSpotUp">
+  <action name="onhoverIconorthoUp">
     showtooltip('hotspot');
   </action>
-  <action name="onoverIconSpotUp">
+  <action name="onoverIconorthoUp">
 tween(scale, 1.2);
 
-pauseautorotation(forcehotspot);
 
   </action>
-  <action name="onoutIconSpotUp">
+  <action name="onoutIconorthoUp">
     hideTooltip();
     tween(scale, 1);
 
-resumeautorotation(forcehotspot);
 
   </action>
 
@@ -183,8 +173,8 @@ resumeautorotation(forcehotspot);
          onover="onoverIconArrowRight"
          onout="onoutIconArrowRight"
 
-         height="35"
-         width="35"
+         height="40"
+         width="40"
          />
   <action name="onhoverIconArrowRight">
     showtooltip('hotspot');
@@ -192,14 +182,12 @@ resumeautorotation(forcehotspot);
   <action name="onoverIconArrowRight">
 tween(scale, 1.2);
 
-pauseautorotation(forcehotspot);
 
   </action>
   <action name="onoutIconArrowRight">
     hideTooltip();
     tween(scale, 1);
 
-resumeautorotation(forcehotspot);
 
   </action>
 
